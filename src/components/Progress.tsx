@@ -1,0 +1,2 @@
+import { useEffect, useState } from 'react';
+export function Progress() { const [p, setP] = useState(0); useEffect(() => { const on = () => { const h = document.documentElement.scrollHeight - innerHeight; setP(h ? (scrollY / h) * 100 : 0); }; addEventListener('scroll', on, {passive:true}); addEventListener('resize', on); on(); return () => { removeEventListener('scroll', on); removeEventListener('resize', on); }; }, []); return <div className="progress"><span style={{width:`${p}%`}} /></div>; }
