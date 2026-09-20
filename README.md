@@ -1,6 +1,6 @@
-# Yugen — deep Zynvex-inspired rebuild
+# Yugen 
 
-A high-fidelity React/Vite landing page recreation built around the visual language of Zynvex while using Yugen Tech's public content structure. This is an original implementation, not a copy of the source site's code or proprietary assets.
+A high-fidelity React/Vite landing page recreation built around the visual language of brain while using Yugen Tech's public content structure. This is an original implementation, not a copy of the source site's code or proprietary assets.
 
 ## Stack
 - React 19 + TypeScript
