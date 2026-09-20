@@ -1,3 +1,9 @@
+type Service = readonly [
+  number: string,
+  title: string,
+  description: string,
+  tags: readonly string[]
+];
 export const site = {
   brand: 'Yugen',
   eyebrow: 'Software Engineering / Available for projects',
@@ -19,7 +25,7 @@ export const site = {
     ['04', 'Cloud Deployment', 'AWS, Docker, CI/CD and multi-environment infrastructure configured for predictable, repeatable deployments.', ['AWS', 'Docker', 'CI/CD']],
     ['05', 'E-commerce Development', 'High-converting commerce experiences with payments, inventory, catalogs, custom checkout and performance tuning.', ['Shopify', 'WooCommerce', 'Payments']],
     ['06', 'System Architecture', 'Scalable designs with service boundaries, event-driven patterns, queues, caching, data flows and performance budgets.', ['Microservices', 'RabbitMQ', 'Observability']],
-  ],
+  ] satisfies Service[],
   techRows: [
     ['React', 'Ruby on Rails', 'TypeScript', 'JavaScript', 'PostgreSQL', 'Redis', 'Docker', 'AWS'],
     ['OpenAI APIs', 'Python', 'Shopify Liquid', 'WordPress', 'WooCommerce', 'GraphQL', 'RabbitMQ', 'Stimulus'],
